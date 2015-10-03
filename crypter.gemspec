@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Implementation of different encryption/descryption security algorithms}
   spec.description   = %q{Implementation of all basic to high level of security algorithms for data encryption and decrytion. For example, RSA, DES, AES etc..}
   spec.homepage      = "https://github.com/Altruist2692/crypter"
-  spec.license       = "MIT"
+  spec.license       = "Not specified"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
