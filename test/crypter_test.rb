@@ -1,4 +1,3 @@
-
 require 'test_helper'
 
 class CrypterTest < Minitest::Test
@@ -6,7 +5,7 @@ class CrypterTest < Minitest::Test
     refute_nil ::Crypter::VERSION
   end
 
-  def test_greeter
-    assert_equal "wel-come", Crypter.greet
+  def test_encrypter
+    assert_equal("ojt", CaesarCypher::Encrypt.new("nis", 1).encrypt )
   end
 end

@@ -1,7 +1,10 @@
 require "crypter/version"
-
+require "crypter/caesar_cypher"
 module Crypter
-  def self.greet
-    "wel-come"
-  end
+    extend CaesarCypher
+
+    def self.included(base)
+        base.send :extend, CaesarCypher
+    end
+    
 end
