@@ -16,16 +16,16 @@ module CaesarCypher
     end
 
     def num_value_of_char(char)
-    char_mapper(num_index_in_array(char))
-  end
+      char_mapper(num_index_in_array(char))
+    end
 
-  def num_index_in_array(char)
-    char_mapper.index(char) + 1
-  end
+    def num_index_in_array(char)
+      char_mapper.index(char) + 1
+    end
 
-  def char_mapper
-    ('a'..'z').zip(0..25).to_h
-  end
+    def char_mapper
+      ('a'..'z').zip(0..25).to_h
+    end
   end
 
   class Decrypt
@@ -43,17 +43,15 @@ module CaesarCypher
     end
 
     def num_value_of_char(char)
-    char_mapper(num_index_in_array(char))
-  end
+      char_mapper(num_index_in_array(char))
+    end
 
-  def num_index_in_array(char)
-    char_mapper.index(char) + 1
-  end
+    def num_index_in_array(char)
+      char_mapper.index(char) + 1
+    end
 
-  def char_mapper
-    ('a'..'z').zip(0..25).to_h
+    def char_mapper
+      ('a'..'z').zip(0..25).to_h
+    end
   end
-  end
-
-  
 end
